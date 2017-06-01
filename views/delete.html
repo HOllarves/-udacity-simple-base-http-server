@@ -1,0 +1,14 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <h1>Are you sure??</h1>
+        <form action="/delete" method="post">
+            <div class="form-group">
+                <input type="hidden" name="id" value="{{restaurant.id}}">
+                <input type="submit" value="Delete" class="btn btn-danger">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

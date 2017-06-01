@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        {% for rest in restaurants %}
+            <div class="well">
+                {{ rest.name }}
+                <div class="pull-right">
+                    <a href="{{rest.id}}/edit">Edit</a>
+                    <a href="{{rest.id}}/delete">Delete</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

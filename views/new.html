@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        <form action="/new" method="post">
+            <div class="form-group">
+                <input type="text" name="name" class="form-control" placeholder="Restaurant's name">
+                <input type="submit" value="Save" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
